@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trading Signals</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7f9;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      color: #004080;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+
+    .signal-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 15px;
+    }
+
+    .signal-item img {
+      max-width: 150px;
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .signal-description {
+      flex: 1 1 300px;
+    }
+
+    .signal-description h3 {
+      margin-bottom: 10px;
+      color: #003366;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 40px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .signal-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .signal-item img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trading Signals</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="signals.html">Signals</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Moving Average Crossover</h2>
+      <div class="signal-item">
+        <!--<img src="images/moving_average_crossover.png" alt="Moving Average Crossover Signal" />-->
+        <div class="signal-description">
+          <p>This signal occurs when a short-term moving average crosses above or below a long-term moving average, indicating potential buy or sell opportunities.</p>
+          <p><strong>Example:</strong> When the 50-day MA crosses above the 200-day MA, it is a bullish signal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>RSI Overbought/Oversold</h2>
+      <div class="signal-item">
+        <!--<img src="images/rsi_overbought_oversold.png" alt="RSI Overbought/Oversold Signal" />-->
+        <div class="signal-description">
+          <p>The Relative Strength Index (RSI) indicates when an asset is overbought or oversold, suggesting potential reversals.</p>
+          <p><strong>Example:</strong> RSI above 70 indicates overbought conditions, while below 30 indicates oversold.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Bollinger Bands</h2>
+      <div class="signal-item">
+        <!--<img src="images/bollinger_bands.png" alt="Bollinger Bands Signal" />-->
+        <div class="signal-description">
+          <p>Signals are generated when price touches or moves outside the Bollinger Bands, indicating volatility and potential price reversals.</p>
+          <p><strong>Example:</strong> Price touching the upper band may indicate overbought conditions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>MACD Divergence</h2>
+      <div class="signal-item">
+        <!--<img src="images/macd_divergence.png" alt="MACD Divergence Signal" />-->
+        <div class="signal-description">
+          <p>Divergence between price and the MACD indicator often signals trend reversals.</p>
+          <p><strong>Example:</strong> Price makes a new high while MACD forms a lower high, indicating bearish divergence.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 Trading Strategies and Signals. All rights reserved.
+  </footer>
+</body>
+</html>

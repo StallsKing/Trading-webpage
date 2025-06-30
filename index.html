@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trading Strategies and Signals</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7f9;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      color: #004080;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+
+    .strategies-list, .signals-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .strategies-list li, .signals-list li {
+      background: #e6f0ff;
+      border-radius: 6px;
+      padding: 15px;
+      flex: 1 1 300px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .strategies-list li h3, .signals-list li h3 {
+      margin-bottom: 10px;
+      color: #003366;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 40px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .strategies-list li, .signals-list li {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trading Strategies and Signals</h1>
+    <nav>
+      <a href="#strategies">Strategies</a>
+      <a href="signals.html">Signals</a>
+    </nav>
+  </header>
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        window.location.href = link.getAttribute('href');
+      });
+    });
+  </script>
+
+  <main>
+    <section id="strategies">
+      <h2>Trading Strategies</h2>
+      <ul class="strategies-list">
+        <li>
+          <h3>Trend Following</h3>
+          <p>Identify and follow the prevailing market trend to maximize profits by entering trades in the direction of the trend.</p>
+        </li>
+        <li>
+          <h3>Mean Reversion</h3>
+          <p>Assumes prices will revert to their average over time, so traders buy undervalued assets and sell overvalued ones.</p>
+        </li>
+        <li>
+          <h3>Breakout Trading</h3>
+          <p>Enter trades when price breaks key support or resistance levels, anticipating strong momentum in the breakout direction.</p>
+        </li>
+        <li>
+          <h3>Scalping</h3>
+          <p>Make many small trades to capture minor price movements, focusing on quick entry and exit.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="signals">
+      <h2>Trading Signals</h2>
+      <ul class="signals-list">
+        <li>
+          <h3>Moving Average Crossover</h3>
+          <p>Buy or sell signals generated when a short-term moving average crosses above or below a long-term moving average.</p>
+        </li>
+        <li>
+          <h3>RSI Overbought/Oversold</h3>
+          <p>Signals based on the Relative Strength Index indicating when an asset is overbought or oversold, suggesting potential reversals.</p>
+        </li>
+        <li>
+          <h3>Bollinger Bands</h3>
+          <p>Signals generated when price touches or moves outside the Bollinger Bands, indicating volatility and potential price reversals.</p>
+        </li>
+        <li>
+          <h3>MACD Divergence</h3>
+          <p>Signals based on divergence between price and the MACD indicator, often signaling trend reversals.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 Trading Strategies and Signals. All rights reserved.
+  </footer>
+</body>
+</html>
